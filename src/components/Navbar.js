@@ -21,28 +21,25 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="nav-items">
-              <Link to="/products">Products</Link>
+              <Link to="/offers">Offers</Link>
             </li>
             <li className="nav-items">
               <Link to="/menu">Menu</Link>
             </li>
             <li className="nav-items">
-              <Link to="/events">Events</Link>
-            </li>
-            <li className="nav-items">
-              <Link to="/blog">Blog</Link>
+              <Link to="/about">About</Link>
             </li>
             <li className="nav-items">
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
-        <div className="flex">
+        <Link to="/cart" className="flex">
           <BiCart className="text-3xl text-white" />
-          <span className="flex justify-center items-center relative right-3 bottom-1 font-bold text-sky-700 w-5 h-5 rounded-full bg-white p-1">
+          <span className="flex justify-center items-center relative right-3 bottom-1 font-normal text-white w-5 h-5 rounded-full bg-red-500 p-1">
             2
           </span>
-        </div>
+        </Link>
       </div>
     </div>
   );

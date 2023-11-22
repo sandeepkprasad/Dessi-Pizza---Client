@@ -9,7 +9,7 @@ const PizzaItem = ({ product }) => {
         className="w-[300px] h-auto transition-transform hover:rotate-180"
       />
       <p className="font-bold text-lg text-red-900">{product.title}</p>
-      <p className="font-bold text-lg text-gray-900">₹{product.price}</p>
+      <p className="font-bold text-lg text-gray-900">₹{product.price[0]}</p>
       <p className="font-semibold text-base text-gray-900">
         {product.description}
       </p>
